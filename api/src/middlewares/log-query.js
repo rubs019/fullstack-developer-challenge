@@ -1,4 +1,4 @@
-import logger from '../lib/logger';
+import logger from '../lib/logger.js';
 
 const logQuery = (req, res, next) => {
   logger.info(

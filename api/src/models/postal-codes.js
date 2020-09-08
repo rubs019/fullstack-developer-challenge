@@ -4,8 +4,8 @@ import csvParse from 'csv-parse';
 import EventEmitter from 'events';
 import fetch from 'node-fetch';
 import util from 'util';
-import filterByRegExp from '../lib/filter-by-reg-exp';
-import logger from '../lib/logger';
+import filterByRegExp from '../lib/filter-by-reg-exp.js';
+import logger from '../lib/logger.js';
 
 // Add Promise support to CSV PArse API — https://csv.js.org/parse/api/
 const csvParseAsync = util.promisify(csvParse);

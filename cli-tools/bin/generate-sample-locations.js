@@ -1,5 +1,5 @@
 import stringify from 'csv-stringify';
-import faker from 'faker/locale/fr';
+import faker from 'faker/locale/fr.js';
 import fs from 'fs';
 import path from 'path';
 import yargs from 'yargs';

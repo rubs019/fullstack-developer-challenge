@@ -1,11 +1,11 @@
 import compression from 'compression';
 import cors from 'cors';
 import express from 'express';
-import logger from './lib/logger';
-import handleError from './middlewares/handle-error';
-import logQuery from './middlewares/log-query';
-import postalCodesRouter from './routes/postal-codes';
-import locationsRouter from './routes/locations';
+import logger from './lib/logger.js';
+import handleError from './middlewares/handle-error.js';
+import logQuery from './middlewares/log-query.js';
+import postalCodesRouter from './routes/postal-codes.js';
+import locationsRouter from './routes/locations.js';
 
 const port = process.env.PORT || 4000;
 

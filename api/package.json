@@ -5,6 +5,7 @@
   "contributors": [],
   "license": "UNLICENSED",
   "private": true,
+  "type": "module",
   "scripts": {
     "lint": "eslint .",
     "start": "node src/",

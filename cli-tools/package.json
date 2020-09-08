@@ -5,6 +5,7 @@
   "contributors": [],
   "license": "UNLICENSED",
   "private": true,
+  "type": "module",
   "scripts": {
     "generate-sample-locations": "node ./bin/generate-sample-locations.js",
     "lint": "eslint .",

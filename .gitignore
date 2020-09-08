@@ -182,3 +182,5 @@ Temporary Items
 # api data
 /api/data/
 !/api/data/.gitkeep
+
+.idea

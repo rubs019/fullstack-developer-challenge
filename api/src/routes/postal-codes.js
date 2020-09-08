@@ -1,5 +1,5 @@
 import express from 'express';
-import postalCodes from '../models/postal-codes';
+import postalCodes from '../models/postal-codes.js';
 
 const postalCodesRouter = express.Router();
 

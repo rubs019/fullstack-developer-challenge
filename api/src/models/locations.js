@@ -1,9 +1,9 @@
-import csvParse from 'csv-parse/lib/sync';
+import csvParse from 'csv-parse/lib/sync.js';
 import EventEmitter from 'events';
 import fs from 'fs';
 import path from 'path';
-import filterByRegExp from '../lib/filter-by-reg-exp';
-import logger from '../lib/logger';
+import filterByRegExp from '../lib/filter-by-reg-exp.js';
+import logger from '../lib/logger.js';
 
 class LocationsDataContainer extends EventEmitter {
   constructor() {
@@ -20,7 +20,7 @@ class LocationsDataContainer extends EventEmitter {
       // Load locations from CSV data file
       this.data = csvParse(
         fs.readFileSync(
-          path.resolve(__dirname, '../../data/locations.csv').toString()
+          path.resolve('./data/sample-locations.csv').toString()
         ),
         { columns: true }
       );
