@@ -62,5 +62,13 @@ et je formaterais mieux le .md :)
 
 PS: Ajout du .idea dans le .gitignore 
 
-
+-----
+WebApp
+- 
+ -> tentative du clean de l'input
+ -> Visiblement je ne peux avoir d'effet de bord sur une fonction render.
+ - J'ai compris le problème mais je ne sais pas comment passer outre cette erreur
+ Délais ~30mn
+API -> Ajout du rateLimiter ~10mn
+    
 
