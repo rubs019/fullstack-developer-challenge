@@ -8,11 +8,13 @@ class LocationSearch extends Component {
     super(props);
 
     this.handleSubmittedData = this.handleSubmittedData.bind(this);
+    this.updateProps = this.updateProps.bind(this);
 
     this.state = {
       loading: false,
       locations: null,
       postalCodeSearchValue: null,
+      success: false,
     };
   }
 
@@ -31,7 +33,7 @@ class LocationSearch extends Component {
 
           const data = await response.json();
 
-          this.setState({ loading: false, locations: data });
+          this.setState({ loading: false, locations: data, success: true });
         } catch (err) {
           this.setState({ loading: false });
         }
@@ -39,13 +41,20 @@ class LocationSearch extends Component {
     );
   }
 
+  updateProps() {
+    console.log('success update');
+    this.setState({ success: false });
+  }
+
   render() {
-    const { loading, locations, postalCodeSearchValue } = this.state;
+    const { loading, locations, postalCodeSearchValue, success } = this.state;
 
     return (
       <Container>
         <PostalCodeForm
           loading={loading}
+          success={success}
+          onUpdateSuccess={this.updateProps}
           onSubmittedData={this.handleSubmittedData}
         />
         <Divider hidden />
