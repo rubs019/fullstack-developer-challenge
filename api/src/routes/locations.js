@@ -5,6 +5,7 @@ const locationsRouter = express.Router();
 
 locationsRouter.get('/locations', (req, res) => {
   const { query } = req;
+
   res.json(locations.find(query));
 });
 

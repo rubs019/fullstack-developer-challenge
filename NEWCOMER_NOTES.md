@@ -69,6 +69,12 @@ WebApp
  -> Visiblement je ne peux avoir d'effet de bord sur une fonction render.
  - J'ai compris le problème mais je ne sais pas comment passer outre cette erreur
  Délais ~30mn
-API -> Ajout du rateLimiter ~10mn
+
+API
+---
+ -> Ajout du rateLimiter ~10mn
+ -> Ajout de la fonction Country Breakdown ~20mn
+ -> 
+
     
 
