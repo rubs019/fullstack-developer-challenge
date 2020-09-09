@@ -68,18 +68,22 @@ WebApp
  -> tentative du clean de l'input
  -> Visiblement je ne peux avoir d'effet de bord sur une fonction render.
  - J'ai compris le problème mais je ne sais pas comment passer outre cette erreur
- Délais ~30mn
+ Délais ~1h
 
 API
 ---
- -> Ajout du rateLimiter ~10mn
- -> Ajout de la fonction Country Breakdown ~20mn
- -> Ajout de la fonction Fake entries cleanup ~5mn
- -> Ajout de la clusterisation de l'application
-    -> Pour le coup je ne suis pas sur de cette solution.
-    -> Le problème étant que je n'ai pas constater de pic particuler au démarrage de l'application
-    -> J'ai donc clusterisé l'application "par défaut" comme on fait sur node.js habituellement
-    -> Néanmoins je ne peux vérifier ma solution à 100%
-    -> Je reste donc cette sceptique concernant cette solution 
+ - Ajout du rateLimiter ~10mn
+ - Ajout de la fonction Country Breakdown ~20mn
+ - Ajout de la fonction Fake entries cleanup ~5mn
+ - Ajout de la clusterisation de l'application
+    - Pour le coup je ne suis pas sur de cette solution.
+    - Le problème étant que je n'ai pas constater de pic particuler au démarrage de l'application
+    - J'ai donc clusterisé l'application "par défaut" comme on fait sur node.js habituellement
+    - Néanmoins je ne peux vérifier ma solution à 100%
+    - Je reste donc cette sceptique concernant cette solution 
+    
+ 
+ 
+Temps total : 140mn
     
 
