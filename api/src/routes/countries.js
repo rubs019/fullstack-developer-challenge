@@ -1,5 +1,5 @@
 import express from 'express';
-import locations from '../models/locations.js';
+import countries from '../models/countries.js';
 
 const countriesRouter = express.Router();
 
@@ -7,7 +7,7 @@ countriesRouter.get('/countries', (req, res) => {
   const { query } = req;
 
   res.json({
-    franchiseePerCountry: locations.find(query).length
+    franchiseePerCountry: countries.find(query).length
   });
 });
 

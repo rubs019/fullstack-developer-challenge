@@ -78,7 +78,9 @@ class PostalCodesDataContainer extends EventEmitter {
   find(query) {
     this.assertInitialized();
 
-    return filterByRegExp(this.data, query);
+    return filterByRegExp(this.data, query).filter((postalCodesData) => {
+      return !!postalCodesData.postalCode
+    });
   }
 }
 

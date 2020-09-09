@@ -74,7 +74,7 @@ API
 ---
  -> Ajout du rateLimiter ~10mn
  -> Ajout de la fonction Country Breakdown ~20mn
- -> 
+ -> Ajout de la fonction Fake entries cleanup ~5mn
 
     
 
